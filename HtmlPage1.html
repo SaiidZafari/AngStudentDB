@@ -8,28 +8,30 @@
     <link href="Script/Style.css" rel="stylesheet" />
 </head>
 <body>
-    {{10+20}}
-    <div ng-controller="messageCont">
-        {{SaiidSay}}
+    <div id="divTitle" ng-controller="messageCont">
+        <h2>{{SaiidSay}}</h2>
     </div>
     <br />
     <div ng-controller="stuCont">
-        <table border="1">
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Gender</th>
-                <th>Total Marks</th>
-                <th>Subject ID</th>
-            </tr>
-            <tr ng-repeat="student in students">
-                <td>{{student.ID}}</td>
-                <td>{{student.Name}}</td>
-                <td>{{student.Gender}}</td>
-                <td>{{student.TotalMarks}}</td>
-                <td>{{student.SubjectID}}</td>
-            </tr>
-        </table>
+        <div id="myTable">
+            <table border="1">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Total Marks</th>
+                    <th>Subject ID</th>
+                </tr>
+                <tr ng-repeat="student in students">
+                    <td>{{student.ID}}</td>
+                    <td>{{student.Name}}</td>
+                    <td>{{student.Gender}}</td>
+                    <td>{{student.TotalMarks}}</td>
+                    <td>{{student.SubjectID}}</td>
+                </tr>
+            </table>
+        </div>
+
         <br />
         <br />
         <div class="allPlace">
@@ -39,7 +41,7 @@
                     <div class="InfoPlace">
                         <table>
                             <tr>
-                                <td colspan="2" id="KortTitel"><lable>Student information</lable></td>
+                                <td colspan="2" id="KortTitle"><lable>Student information</lable></td>
                             </tr>
                             <tr>
                                 <td><label><b>ID</b></label></td>
@@ -68,6 +70,8 @@
         </div>
         <br />
         <br />
+        <br />
+        <br />
         <!--<img src="Photo/Nasa-back.png" />-->
         <div ng-repeat="student in students">
             <div class="stuBase" ng-controller="stuCont">
@@ -75,7 +79,7 @@
                 <div class="DTLimg"><img src="Photo/Nasa-top.png" /></div>
                 <div class="DTRimg"><img src="Photo/Nasa-back.png" /></div>
                 <div class="myDiv"></div>
-                <div class="Dtitel"><h2>Student information base</h2></div>
+                <div class="Dtitle"><h2>Student information base</h2></div>
                 <div class="Dphoto"><img src="Photo/Dphoto.png" /></div>
                 <table>
                     <tr>
