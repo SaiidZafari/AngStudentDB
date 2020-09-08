@@ -69,16 +69,21 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="HtmlPage1.html" />
+    <Content Include="HtmlPage2Editor.html" />
     <Content Include="Photo\Dphoto-small.png" />
     <Content Include="Photo\Dphoto.png" />
     <Content Include="Photo\Nasa-back.png" />
     <Content Include="Photo\Nasa-top.png" />
     <Content Include="Photo\SaiidZafari1.jpg" />
+    <Content Include="Photo\uddannelse.jpg" />
+    <Content Include="Photo\uddannelse2.jpg" />
+    <Content Include="Photo\uddannelse3.jpg" />
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Script\AngScript.js" />
     <Content Include="Script\Style.css" />
+    <Content Include="Script\StyleEditor.css" />
     <Content Include="StudWebService.asmx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />

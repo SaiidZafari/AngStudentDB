@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html ng-app="myModule">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="Scripts/angular.js"></script>
+    <script src="Script/AngScript.js"></script>
+    <link href="Script/StyleEditor.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="Editor">
+        <div id="Image"><img src="Photo/Dphoto-small.png" /></div>
+        <div class="Head"><img src="Photo/uddannelse.jpg" />
+        </div>
+        <div id="Body" ng-controller="stuCont">
+            <h1>Student information</h1>
+
+            <div id="divTitle" ng-controller="messageCont">
+                <h2>{{SaiidSay}}</h2>
+            </div>
+
+            <div id="myTable">
+                <table border="1">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>Total Marks</th>
+                        <th>Subject ID</th>
+                    </tr>
+                    <tr ng-repeat="student in students">
+                        <td>{{student.ID}}</td>
+                        <td>{{student.Name}}</td>
+                        <td>{{student.Gender}}</td>
+                        <td>{{student.TotalMarks}}</td>
+                        <td>{{student.SubjectID}}</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!--<div ng-repeat="student in students">-->
+                <div>
+                <div class="kortPlace" ng-controller="stuCont">
+
+                    <div class="InfoPlace">
+                        <table>
+                            <tr>
+                                <td colspan="2" id="KortTitle"></td>
+                            </tr>
+                            <tr>
+                                <td><label><b>ID</b></label></td>
+                                <td><input value="{{student.ID}}" /></td>
+                            </tr>
+                            <tr>
+                                <td><label><b>Name</b></label></td>
+                                <td><input value="{{student.Name}}" /></td>
+                            </tr>
+                            <tr>
+                                <td><label><b>Gender</b></label></td>
+                                <td><input value="{{student.Gender}}" /></td>
+                            </tr>
+                            <tr>
+                                <td><label><b>Total Marks</b></label></td>
+                                <td><input value="{{student.TotalMarks}}" /></td>
+                            </tr>
+                            <tr>
+                                <td><label><b>Subject ID</b></label></td>
+                                <td><input value="{{student.SubjectID}}" /></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
